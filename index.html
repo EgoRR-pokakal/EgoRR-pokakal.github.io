@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тайна парня — статья</title>
+  <style>
+    :root{--bg:#f1f5f9;--card:#fff;--accent:#ffd54f;--muted:#6b7280;--accent-dark:#f0b429}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#eef2f7, #f7fafc);color:#111}
+    .wrap{max-width:980px;margin:30px auto;padding:20px}
+
+    header h1{font-size:34px;line-height:1.05;margin:0 0 14px;font-weight:700}
+    .meta{display:flex;gap:12px;align-items:center;color:var(--muted);font-size:14px;margin-bottom:12px}
+    .meta .badge{background:linear-gradient(#fff,#fff);padding:6px 10px;border-radius:8px;border:1px solid #eee}
+    .earn{background:var(--accent);display:inline-block;padding:10px 16px;border-radius:8px;color:#111;font-weight:700;margin-left:auto}
+
+    .card{background:var(--card);border-radius:10px;padding:18px;box-shadow:0 6px 18px rgba(15,23,42,0.06);}
+
+    .article-grid{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:start}
+    .content p{color:#333;line-height:1.6}
+
+    /* image box */
+    .hero{width:100%;border-radius:8px;overflow:hidden;border:1px solid #e6e9ef}
+    .hero img{display:block;width:100%;height:auto}
+
+    /* sidebar imitates the colored panel on the right */
+    .sidebar{background:linear-gradient(0deg,#e6f0ff,#fff);border-radius:8px;padding:14px;border:1px solid #e6edf8}
+
+    /* responsive */
+    @media (max-width:980px){.article-grid{grid-template-columns:1fr;}
+      .sidebar{order:2}
+    }
+
+    /* small utility */
+    .yellow-btn{background:var(--accent);padding:10px 14px;border-radius:8px;border:none;font-weight:700}
+    .stat{display:inline-flex;align-items:center;gap:8px}
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header>
+        <h1>Тайна парня, который всегда гулял с мусорным ведром. Обомлел, когда узнал, куда он исчез</h1>
+        <div class="meta">
+          <div class="stat">21 июля 2023 в 18:41</div>
+          <div class="stat">• 1 003 дочитывания</div>
+          <div class="stat">• 4 комментария</div>
+          <div style="margin-left:auto"><button class="yellow-btn">Зарабатывать</button></div>
+        </div>
+      </header>
+
+      <div class="article-grid" style="margin-top:10px">
+        <div class="content">
+          <div class="hero">
+            <img src="image.png" alt="Фото статьи">
+          </div>
+
+          <h2 style="margin-top:16px;font-size:20px">Коротко о фотографиях</h2>
+          <p>Это имитация сайта-страницы по предоставленному фото. На макете: крупное заглавие, мета-информация (дата, просмотры, комментарии) и большая фотография с правой цветной панелью в стиле оригинала.</p>
+          <p>При желании я могу добавить адаптивную галерею, поделиться иконками, а также стилизовать фон и типографику под конкретный бренд.</p>
+        </div>
+
+        <aside class="sidebar">
+          <div style="font-weight:700;margin-bottom:8px">Эта публикация уже заработала 50,70 рублей за дочитывания</div>
+          <div class="muted" style="font-size:14px;margin-bottom:12px">Рекламная панель — тут можно разместить призыв к действию или блок авторских ссылок.</div>
+          <button class="yellow-btn" style="width:100%">Заработать</button>
+        </aside>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
